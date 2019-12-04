@@ -30,7 +30,8 @@ addStackButton.onclick = () => {
         const liStack = document.querySelector(`li[data-stack="${nextLimNum}"]`)
         liStack.innerHTML = value;
         stack.push(value);
-        addInput.value = ''; 
+        addInput.value = '';
+        addInput.focus(); 
     } else {
         errorMsg('Stack overflow')
     }
